@@ -8,8 +8,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '孙康 blog client' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: '孙康,sunkang,blog,client' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'keywords', content: '孙康的博客,sunkang,blog,zone'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
