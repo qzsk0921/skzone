@@ -1,23 +1,44 @@
 <template>
-  <div>
+  <div class="root">
     <Tutorial />
     <div class="ball-box">
       <div class="ball1 ball"></div>
       <div class="ball2 ball"></div>
       <div class="ball3 ball"></div>
       <div class="ball4 ball"></div>
-    oom-killer
+    oom-killer out of memory
+    I want to be someone like Elon Musk
     </div>
+    <a style="position:absolute;bottom:20px;transform: translateX(-50%);" href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2023002954号-1</a>
   </div>
 </template>
 
 <script>
+// import { getTestData } from '~/src/api/data'
+// const {getTestData} = require('/src/api/data')
+// import axios from 'axios'
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+  async asyncData({ $axios }) {
+    console.log('geographic information system')
+    // return data
+    // $axios.get('https://sk2.fun/api/gettestdata').then(res=>{
+    //   console.log(2222)
+    // }).catch(err=>{
+    //   console.log(333)
+    //   console.log(err)
+    // })
+    // const testData = await $axios.get('https://sk2.fun/api/gettestdata')
+    // console.log(testData)
+    return {project: 'nuxt'}
+  }
 }
 </script>
 
 <style scoped>
+.root {
+  text-align: center;
+}
 @keyframes ball {
   0% {
     transform: scale(1);
